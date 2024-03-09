@@ -18,7 +18,8 @@
                     <td>{{ person.name}}</td>
                     <td>{{ person.age}}</td>
                     <td>{{ person.job}}</td>
-                    <td><a href="#" @click.prevent="changeEditPersonID(person.id, person)" class="btn btn-success">Edit</a></td>
+                    <td><a href="#" @click.prevent="changeEditPersonID(person.id, person)"
+                           class="btn btn-success">Edit</a></td>
                     <td><a href="#" @click.prevent="deletePerson(person.id)" class="btn btn-danger">Delete</a></td>
                 </tr>
                 <tr :class="isEdit(person.id) ? '' : 'd-none'">
@@ -49,17 +50,17 @@
             }
         },
 
-        mounted(){
-            this.getPeople()
+        mounted() {
+            this.getPeople();
         },
 
         methods: {
             getPeople() {
                 axios.get('api/people')
-                .then ( res => {
-                        this.people = res.data
-                    }
-                )
+                    .then(res => {
+                            this.people = res.data
+                        }
+                    )
             },
 
             changeEditPersonID(id, person) {
@@ -69,29 +70,28 @@
                 this.job = person.job
             },
 
-            isEdit(id){
+            isEdit(id) {
                 return this.editPersonID === id
             },
 
-            updatePerson(id){
+            updatePerson(id) {
                 this.editPersonID = null
                 axios.patch(`api/people/${id}`, {
                     name: this.name,
                     age: this.age,
                     job: this.job
                 })
-                .then ( res => {
-                    this.getPeople()
-                })
+                    .then(res => {
+                        this.getPeople()
+                    })
             },
 
-            deletePerson(id){
+            deletePerson(id) {
                 axios.delete(`api/people/${id}`)
-                .then ( res => {
-                    this.getPeople()
-                    console.log(res);
-                })
-            }
+                    .then(res => {
+                        this.getPeople()
+                    })
+            },
         }
     }
 

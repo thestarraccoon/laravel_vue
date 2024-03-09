@@ -1,7 +1,7 @@
 <template>
     <div>
     <CreateComponent></CreateComponent>
-    <IndexComponent></IndexComponent>
+    <IndexComponent ref="index"></IndexComponent>
 <!--        <table class="table">-->
 <!--            <thead>-->
 <!--            <tr>-->
@@ -37,17 +37,12 @@
             }
         },
 
-        // mounted() {
-        //     this.getPersons()
-        // },
+        mounted() {
+            console.log(this.$refs.index.indexLog());
+        },
 
-        // methods: {
-        //     getPersons(){
-        //         axios.get('/persons').then( data => {
-        //             this.persons = data.data
-        //         })
-        //     },
-        // },
+        methods: {
+        },
 
         components: {
             CreateComponent,

@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c846c7b-5d02-44ff-924b-ddbc83e9f957" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/SomeComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/CreateComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/CreateComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/IndexComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/IndexComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/PostComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/PostComponent.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -186,14 +189,14 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Requests/Person" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js/components" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\wamp64\www\laravel_vue\resources\js\components" />
       <recent name="E:\wamp64\www\laravel_vue\app\Http\Requests\Person" />
       <recent name="E:\wamp64\www\laravel_vue\app\Http\Controllers\Person" />
-      <recent name="E:\wamp64\www\laravel_vue\resources\js\components" />
       <recent name="E:\wamp64\www\laravel_vue\app\Http\Controllers" />
     </key>
   </component>
@@ -243,7 +246,7 @@
       <workItem from="1709488345916" duration="2209000" />
       <workItem from="1709831298744" duration="4049000" />
       <workItem from="1709980737305" duration="2000" />
-      <workItem from="1710020539050" duration="1924000" />
+      <workItem from="1710020539050" duration="4483000" />
     </task>
     <servers />
   </component>

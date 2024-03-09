@@ -12,10 +12,13 @@
         <div class="mb-3">
             <input @click.prevent="addPerson" class="btn btn-primary" value="Добавить">
         </div>
+        <SomeComponent :obj="obj"></SomeComponent>
     </div>
 </template>
 
 <script>
+    import SomeComponent from './SomeComponent.vue';
+
     export default {
         name: "CreateComponent",
 
@@ -23,7 +26,12 @@
             return {
                 name: null,
                 age: null,
-                job: null
+                job: null,
+                obj: {
+                    color: 'black',
+                    number: 11,
+                    isPublished: true
+                }
             }
         },
 
@@ -34,12 +42,17 @@
                     age: this.age,
                     job: this.job
                 })
-                .then(res => {
-                    this.name = null,
-                    this.age = null,
-                    this.job = null
-                })
+                    .then(res => {
+                        this.$parent.$refs.index.getPeople();
+                        this.name = null,
+                            this.age = null,
+                            this.job = null
+                    })
             }
+        },
+
+        components: {
+            SomeComponent
         }
     }
 
