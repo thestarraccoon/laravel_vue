@@ -1,0 +1,61 @@
+<template>
+    <div>
+    <CreateComponent></CreateComponent>
+    <IndexComponent></IndexComponent>
+<!--        <table class="table">-->
+<!--            <thead>-->
+<!--            <tr>-->
+<!--                <th scope="col">#</th>-->
+<!--                <th scope="col">Name</th>-->
+<!--                <th scope="col">Age</th>-->
+<!--                <th scope="col">Job</th>-->
+<!--            </tr>-->
+<!--            </thead>-->
+<!--            <tbody v-for="person in persons" >-->
+<!--                <tr>-->
+<!--                    <th scope="row"> {{ person.id }}</th>-->
+<!--                    <td>{{ person.name }}</td>-->
+<!--                    <td>{{ person.age }}</td>-->
+<!--                    <td>{{ person.job }}</td>-->
+<!--                </tr>-->
+<!--            </tbody>-->
+<!--        </table>-->
+
+    </div>
+</template>
+
+<script>
+    import CreateComponent from './CreateComponent.vue';
+    import IndexComponent from './IndexComponent.vue';
+
+    export default {
+        name: "PostComponent",
+
+        data() {
+            return {
+                persons: null
+            }
+        },
+
+        // mounted() {
+        //     this.getPersons()
+        // },
+
+        // methods: {
+        //     getPersons(){
+        //         axios.get('/persons').then( data => {
+        //             this.persons = data.data
+        //         })
+        //     },
+        // },
+
+        components: {
+            CreateComponent,
+            IndexComponent
+        }
+    }
+</script>
+
+<style scoped>
+
+</style>
