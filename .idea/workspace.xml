@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c846c7b-5d02-44ff-924b-ddbc83e9f957" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/SomeComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/EditComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/ShowComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/CreateComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/CreateComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/IndexComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/IndexComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/PostComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/PostComponent.vue" afterDir="false" />
     </list>
@@ -246,7 +246,8 @@
       <workItem from="1709488345916" duration="2209000" />
       <workItem from="1709831298744" duration="4049000" />
       <workItem from="1709980737305" duration="2000" />
-      <workItem from="1710020539050" duration="4483000" />
+      <workItem from="1710020539050" duration="4754000" />
+      <workItem from="1710060370230" duration="5182000" />
     </task>
     <servers />
   </component>
@@ -258,7 +259,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

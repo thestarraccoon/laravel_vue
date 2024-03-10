@@ -38,7 +38,6 @@
         },
 
         mounted() {
-            console.log(this.$refs.index.indexLog());
         },
 
         methods: {
