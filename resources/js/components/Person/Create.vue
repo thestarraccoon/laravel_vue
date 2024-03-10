@@ -10,7 +10,7 @@
             <input type="text" class="form-control" v-model="job" placeholder="job">
         </div>
         <div class="mb-3">
-            <input @click.prevent="store" type="submit" class="btn btn-primary" value="Add">
+            <input :disabled="!isDisabled" @click.prevent="store" type="submit" class="btn btn-primary" value="Add">
         </div>
     </div>
 </template>
@@ -39,6 +39,12 @@
                     .then( () => {
                         router.push({name: 'person.index'})
                     })
+            },
+        },
+
+        computed: {
+            isDisabled() {
+                return this.name && this.age && this.job;
             }
         }
     }

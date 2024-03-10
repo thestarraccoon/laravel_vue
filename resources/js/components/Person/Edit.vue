@@ -10,14 +10,12 @@
             <input type="text" class="form-control" v-model="job" placeholder="job">
         </div>
         <div class="mb-3">
-            <input @click.prevent="updatePerson" type="submit" class="btn btn-primary" value="Update">
+            <input :disabled="!isDisabled" @click.prevent="updatePerson" type="submit" class="btn btn-primary" value="Update">
         </div>
     </div>
 </template>
 
 <script>
-    import router from "../../router";
-
     export default {
         name: "Edit",
 
@@ -35,23 +33,29 @@
 
         methods: {
             getPerson() {
-                axios.get('/api/people/' + this.$route.params.id)
+                axios.get(`/api/people/${this.$route.params.id}`)
                 .then( res => {
-                    this.name = res.data.name,
-                    this.age = res.data.age,
-                    this.job = res.data.job
+                    this.name = res.data.data.name,
+                    this.age = res.data.data.age,
+                    this.job = res.data.data.job
                 })
             },
 
             updatePerson() {
-                axios.patch('/api/people/' + this.$route.params.id, {
+                axios.patch(`/api/people/${this.$route.params.id}`, {
                     name: this.name,
                     age: this.age,
                     job: this.job
                 })
                     .then ( () => {
-                        router.push({name: 'person.show', params: {id: this.$route.params.id}});
+                        this.$router.push({name: 'person.show', params: {id: this.$route.params.id}});
                     })
+            }
+        },
+
+        computed: {
+            isDisabled() {
+                return this.name && this.age && this.job;
             }
         }
     }
