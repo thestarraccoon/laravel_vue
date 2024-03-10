@@ -50,7 +50,7 @@
                     job: this.job
                 })
                     .then ( () => {
-                        router.push({name: 'person.show'});
+                        router.push({name: 'person.show', params: {id: this.$route.params.id}});
                     })
             }
         }
