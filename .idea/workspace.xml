@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c846c7b-5d02-44ff-924b-ddbc83e9f957" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/store/modules/person.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Person/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Person/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Person/ShowController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Person/ShowController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Person/StoreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Person/StoreController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Person/UpdateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Person/UpdateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/Person/Create.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Person/Create.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/Person/Edit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Person/Edit.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/Person/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Person/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Person/Show.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Person/Show.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/store/modules/person.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/modules/person.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -267,7 +258,8 @@
       <workItem from="1709980737305" duration="2000" />
       <workItem from="1710020539050" duration="4754000" />
       <workItem from="1710060370230" duration="15939000" />
-      <workItem from="1710101221378" duration="5530000" />
+      <workItem from="1710101221378" duration="5635000" />
+      <workItem from="1710189589720" duration="2077000" />
     </task>
     <servers />
   </component>
